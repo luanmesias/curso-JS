@@ -3,9 +3,9 @@ const form = document.querySelector('.form');
 let contador = 1;
 function recebeEventoForm (evento) {
     evento.preventDefault();
-    console.log('Form enviado', contador)
+    console.log(`Form não enviado ${contador}`)
     contador++
-}
+    }
 
 form.addEventListener('submit', recebeEventoForm);
 
